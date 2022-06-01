@@ -12,9 +12,17 @@ namespace Cursova
 {
     public partial class Form1 : Form
     {
+
+        C_DataBase dataBase = new C_DataBase();
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
