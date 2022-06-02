@@ -19,12 +19,11 @@ namespace Cursova
             InitializeComponent();
         }
 
-        private void log_in_load(object sender, EventArgs e)
+        private void Sign_Load(object sender, EventArgs e)
         {
             textBox2.PasswordChar = '*';
             textBox2.MaxLength = 16;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             var loginUser = textBox1.Text;
@@ -52,6 +51,13 @@ namespace Cursova
             {
                 MessageBox.Show("Такого аккаунта не существует!", "Аккаунта не существует!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Reg reg = new Reg();
+            reg.Show();
+            this.Hide();
         }
     }
 }
