@@ -24,5 +24,11 @@ namespace Cursova
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Sign sign = new Sign();
+            sign.Show();  
+        }
     }
 }
