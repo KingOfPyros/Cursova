@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Cursova
 {
@@ -30,6 +32,24 @@ namespace Cursova
         {
             Sign sign = new Sign();
             sign.Show();  
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            dataBase.openConnection();
+
+            string querystring = $"SELECT * FROM Games";
+
+            SqlCommand command = new SqlCommand(querystring, dataBase.getConnection());
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            DataTable table = new DataTable();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            dataGridView1.DataSource = table;
+
         }
     }
 }
