@@ -17,6 +17,7 @@ namespace Cursova
         public Reg()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Reg_Load(object sender, EventArgs e)

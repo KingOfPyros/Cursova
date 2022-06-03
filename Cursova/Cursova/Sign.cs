@@ -17,6 +17,7 @@ namespace Cursova
         public Sign()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Sign_Load(object sender, EventArgs e)

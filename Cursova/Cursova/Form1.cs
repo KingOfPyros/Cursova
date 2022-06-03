@@ -18,6 +18,7 @@ namespace Cursova
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
