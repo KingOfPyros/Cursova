@@ -51,5 +51,35 @@ namespace Cursova
             dataGridView1.DataSource = table;
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("У вас недостаточно средств. Можете закинуть деньги на баланс через карту автора: 5375 4114 0893 1710");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("У вас недостаточно средств. Можете закинуть деньги на баланс через карту автора: 5375 4114 0893 1710");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("У вас недостаточно средств. Можете закинуть деньги на баланс через карту автора: 5375 4114 0893 1710");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Эта игра уже есть в вашей библиотеке. Можете поддержать автора: 5375 4114 0893 1710");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Эта игра уже есть в вашей библиотеке. Можете поддержать автора: 5375 4114 0893 1710");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Эта игра уже есть в вашей библиотеке. Можете поддержать автора: 5375 4114 0893 1710");
+        }
     }
 }
